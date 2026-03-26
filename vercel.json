@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/cosense",
+      "destination": "https://scrapbox.io/api/pages/TECHSTOCK?limit=1000"
+    }
+  ]
+}
+```
+
+5. **Commit changes** をクリック
+
+そのあと、`index.html` のAPIのURLも変更する必要があるから、GitHubで `index.html` を開いて、この1行を探して：
+```
+const API_URL = `https://scrapbox.io/api/pages/${PROJECT}?limit=1000`;
+```
+
+これを↓に変更：
+```
+const API_URL = '/api/cosense';
