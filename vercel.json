@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/cosense",
+      "destination": "https://scrapbox.io/api/pages/TECHSTOCK?limit=1000"
+    }
+  ]
+}
